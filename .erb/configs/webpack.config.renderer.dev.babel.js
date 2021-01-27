@@ -44,7 +44,8 @@ export default merge(baseConfig, {
   entry: [
     'core-js',
     'regenerator-runtime/runtime',
-    require.resolve('../../src/index.tsx'),
+	require.resolve('../../src/index.tsx'),
+	require.resolve('../../src/preload.js')
   ],
 
   output: {
